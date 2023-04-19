@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header__icon {
+  width: 18px;
+  height: 12px;
+  padding: 0 35px 0 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__icon-stick {
+  width: 18px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.54);
+}
+
+.header__title {
+  width: calc(100% - 4px - 18px - 19px - 4px - 60px);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.header__dots {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 4px;
+  height: 16px;
+}
+
+.header__dots-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.54);
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 69px;
+  margin: 0 auto;
+}
+
+.tools {
+  width: 228px;
+  height: 246px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.tools__tool {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tools_tool-icon {
+  width: 20px;
+  margin: 0 35px 0 20px;
+}
+
+.tools__tool-name {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.tool-transform-name {
+  color: rgb(0 0 0 / 13%);
+}
+
+.tool-transform-img {
+  opacity: 0.25;
+}
+
+.colors {
+  width: 228px;
+  height: 246px;
+  margin-top: 92px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.colors__color {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.colors__color-name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.colors__color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  margin: 0 35px 0 20px;
+}
+
+.colors__color-input-circle {
+  background-color: transparent;
+  width: 30px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 29px 0 17px;
+  cursor: pointer;
+}
+.colors__color-input-circle::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 1.3px solid black;
+}
+
+.prev-color,
+.red-color,
+.blue-color {
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.red {
+  background: #f74141;
+}
+
+.blue {
+  background: #41b6f7;
+}
+
+#myCanvas {
+  width: 512px;
+  height: 512px;
+  background: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.search-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.search-menu-form {
+  display: flex;
+}
+
+.style-button {
+  background-color: #00bcd4;
+  border: 0px;
+  width: 65px;
+  height: 33px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  color: white;
+}
+
+.border-for-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 204px;
+  height: 31px;
+  margin-left: 20.9px;
+ 
+
+  background: #FAFAFA;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+border-radius: 2px;
+}
+
+.search-input {
+  border: 0;
+}
+
+.switcher {
+  width: 130px;
+  height: 246px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.switcher__option {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-bottom: 0.9px solid #c4c4c4;
+}
+
+.switcher__option-size {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.switcher__option-square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #000000;
+}
+
+.tool-active {
+  background-color: #c4c4c4;
+}

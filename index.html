@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Image API</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__icon">
+      <div class="header__icon-stick"></div>
+      <div class="header__icon-stick"></div>
+      <div class="header__icon-stick"></div>
+    </div>
+    <h1 class="header__title">CodeJam - Image API</h1>
+    <div class="header__dots">
+      <div class="header__dots-dot"></div>
+      <div class="header__dots-dot"></div>
+      <div class="header__dots-dot"></div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="menu">
+      <div class="tools">
+        <div class="tools__tool fill-tool">
+          <img src="./assets/paint-bucket.svg" alt="fill bucket" class="tools_tool-icon">
+          <p class="tools__tool-name">Fill bucket</p>
+        </div>
+        <div class="tools__tool choose-color">
+          <img src="./assets/choose-color.svg" alt="choose color" class="tools_tool-icon">
+          <p class="tools__tool-name">Choose color</p>
+        </div>
+        <div class="tools__tool pencil-tool">
+          <img src="./assets/pencil.png" alt="pencil" class="tools_tool-icon">
+          <p class="tools__tool-name">Pencil</p>
+        </div>
+        <div class="tools__tool">
+          <img src="./assets/transform.svg" alt="transform" class="tools_tool-icon tool-transform-img">
+          <p class="tools__tool-name tool-transform-name">Transform</p>
+        </div>
+      </div>
+      <div class="colors">
+        <div class="colors__color">
+          <input type="color" class="colors__color-input-circle current-color">
+          <p class="colors__color-name">Current color</p>
+        </div>
+        <div class="colors__color border border">
+          <button class="prev-color">
+            <div class="colors__color-circle prev"></div>
+          </button>
+          <p class="colors__color-name">Prev color</p>
+        </div>
+        <div class="colors__color">
+          <button class="red-color">
+            <div class="colors__color-circle red"></div>
+          </button>
+          <p class="colors__color-name">red</p>
+        </div>
+        <div class="colors__color">
+          <button class="blue-color">
+            <div class="colors__color-circle blue"></div>
+          </button>
+          <p class="colors__color-name">blue</p>
+        </div>
+      </div>
+    </section>
+    <div class="canvas-container">
+      <div class="search-menu">
+        <form action="" method="get" class="search-menu-form">
+          <button type="submit" class="load-button style-button">Load</button>
+          <span class="border-for-input">
+            <label for="search-input">
+              <img src="./assets/Shape.png" alt="search-icon">
+            </label>
+            <input type="text" class="search-input" name="q" placeholder="Enter the city">
+          </span>
+
+        </form>
+        <button class="toggle-button style-button">B&W</button>
+      </div>
+      <canvas id="myCanvas"></canvas>
+    </div>
+
+  </main>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
