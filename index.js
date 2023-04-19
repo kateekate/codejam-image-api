@@ -13,6 +13,9 @@ const fillTool = document.querySelector('.fill-tool')
 const redColor = document.querySelector('.red-color')
 const blueColor = document.querySelector('.blue-color')
 const chooseColor = document.querySelector('.choose-color')
+const inputElement = document.querySelector('.search-input')
+const loadButton = document.querySelector('.load-button')
+const toggleButton = document.querySelector('.toggle-button')
 
 // Choose color tool(pipetka)
 function rgbToHex(rgbColor) {
@@ -129,13 +132,11 @@ chooseColor.addEventListener('click', function () {
   canvas.addEventListener('click', canvasChooseColorHandler)
 })
 
-// 
 
+// Load random images of city in the input
 
 const accessKey = 'wcFSuwY7S8FTJDf7yAqoQz7tZGyEttatjgVGzoEnnGg'
 let query = ''
-const inputElement = document.querySelector('.search-input')
-const loadButton = document.querySelector('.load-button')
 
 canvas.width = 514
 canvas.height = 514
@@ -162,4 +163,10 @@ loadButton.addEventListener('click', (event) => {
 inputElement.addEventListener('change', () => {
   query = inputElement.value
   console.log(query)
+})
+
+// Change img to black&white color
+
+toggleButton.addEventListener('click', () => {
+  canvas.classList.toggle('grayscale')
 })
